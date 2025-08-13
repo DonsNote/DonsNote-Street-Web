@@ -18,12 +18,8 @@ const SignUpPage: React.FC = () => {
   // UI state
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false);
-  const [errors, setErrors] = {
-    password: '',
-    confirmPassword: '',
-    verification: '',
-    email: '',
-  });
+  const [errors, setErrors] = useState({ password: '', confirmPassword: '', verification: '', email: '' });
+    
   const [isFormValid, setIsFormValid] = useState(false);
 
   // --- Validation Logic ---
